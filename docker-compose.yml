@@ -1,0 +1,11 @@
+version: '2'
+services:
+ o2o-admin-vue:
+   build: .
+   image: hub.vcredit.com/o2o/admin-vue
+   ports:
+   - 3700:80
+   environment:
+    NODE_ENV: development
+   container_name: admin-vue
+   mem_limit: 2048M

@@ -1,0 +1,214 @@
+.body-warp {
+  animation: fadeIn .5s ease;
+}
+.left-side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #30343f;
+  .left-body{
+    position:absolute!important;
+    // left:20px!important;
+    width:220px!important;
+    height:90%;
+  }
+  //.foldbar{
+  //  position:fixed;
+  //  top:0;
+  //  bottom:0;
+  //  left:200px;
+  //  width:20px;
+  //  height:100%;
+  //  background:#eff0f4;}
+  .menu-box {
+    background-color: #30343f;
+    .menu-list, .el-submenu__title {
+      width:220px;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      background-color: #30343f;
+      border-left:3px solid #3e424e;
+      .icon {
+        width: 16px;
+        font-size: 14px;
+      }
+      .text {
+        margin-left: 10px;
+      }
+      .two_06{
+        display:none
+      }
+      &.is-active, &:hover {
+        border-left:3px solid #e75073;
+        background-color: #3e424e !important;
+        color: #e75073;
+        .two_06{
+          display:inline-block;
+        }
+        .two_03{
+          display:none;
+        }
+      }
+    }
+  }
+}
+
+.header-section {
+  .logo {
+    margin:0 auto;
+    text-align: center;
+  }
+  position: fixed;
+  top: 0;
+  left: inherit;
+  width:100%;
+  height: 50px;
+  background-color: #e8546a;
+  border-bottom: 1px solid #e8546a;
+  z-index: 100;
+  .search {
+    //margin: 6.5px 10px;
+    //float: left;
+    //width: 220px;
+    //height: 35px;
+    //font-size: 14px;
+  }
+  .menu-right {
+    //position: relative;
+    //float: right;
+    //margin-right: 10%;
+    position:fixed;
+    top:0;
+    right:10px;
+    //text-align: right;
+    font-size: 0;
+    z-index: 999;
+    .notification-list {
+      position: relative;
+      display: inline-block;
+      z-index: 999;
+      .notification-btn {
+        display: block;
+        padding: 0 15px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        background: #e8546a;
+        color: #fff;
+        cursor: pointer;
+        transition: background ease 0.2s;
+        &:hover{
+          color: #fff;
+          background: #e8546a;
+          .icon {
+            border-color: #fff;
+            border-top:4px solid;
+            border-right: 4px solid #e8546a;
+            border-left: 4px solid #e8546a;
+          }
+        }
+        img {
+          vertical-align: middle;
+          margin-right: 5px;
+          width: 26px;
+          border-radius: 2px;
+        }
+        .icon {
+          display: inline-block;
+          width: 0;
+          height: 0;
+          margin-left: 2px;
+          vertical-align: middle;
+          border-color: #fff;
+          border-top: 4px solid;
+          border-right: 4px solid #e8546a;
+          border-left: 4px solid #e8546a;
+        }
+      }
+    }
+  }
+}
+.main-content {
+  position: relative;
+  margin-left: 220px;
+  padding-top: 30px;
+  .wrapper {
+    padding: 15px;
+    padding-left:15px;
+  }
+  .panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    .panel-title {
+      padding: 0 15px;
+      color: #535351;
+      height: 45px;
+      line-height: 45px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+      .panel_title_select {
+        display: inline-block;
+        .el-input__inner {
+          height: 28px;
+        }
+      }
+    }
+    .panel-body {
+      padding: 15px;
+      overflow: hidden;
+      font-weight: normal;
+      .bottom-toolbar {
+        margin-top: 15px;
+        padding: 15px 0;
+      }
+    }
+  }
+  .footer {
+    background: #fff;
+    padding: 15px;
+    color: #7A7676;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #eff0f4;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #e8546a;
+  .dropdown-list {
+    padding: 0;
+    line-height: normal;
+  }
+  .dropdown-btn {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    padding: 7px 10px;
+    text-align: left;
+    cursor: pointer;
+    &:hover {
+      background: #e8546a;
+      color: #fff;
+    }
+    .icon {
+      margin-right: 5px;
+    }
+  }
+}
